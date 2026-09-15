@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deiverson Sousa | Portfólio</title>
+    <meta name="description" content="Portfólio de Deiverson Sousa, desenvolvedor front-end com foco em interfaces modernas e experiências digitais.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+
+    <header class="topbar">
+        <nav class="nav container">
+            <div class="brand">DS</div>
+            <div class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#skills">Skills</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-copy">
+                <div class="tag">System online</div>
+                <h1>Deiverson <span>Sousa</span></h1>
+                <p class="subtitle">
+                    Desenvolvedor <span>fullstack</span> criando soluções digitais completas, com foco em
+                    <span>performance</span>, <span>experiência do usuário</span> e <span>funcionalidade</span>.
+                </p>
+
+                <div class="cta-group">
+                    <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+                    <a class="btn btn-secondary" href="#contato">Falar comigo</a>
+                </div>
+
+                <ul class="stats">
+                    <li><strong>2+</strong><span>Anos</span></li>
+                    <li><strong>12</strong><span>Projetos</span></li>
+                    <li><strong>100%</strong><span>Dedicação</span></li>
+                </ul>
+
+                <div class="socials" aria-label="Redes sociais">
+                    <a href="https://github.com/deiversonsousa" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 8.21 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.74.08-.74 1.21.09 1.85 1.25 1.85 1.25 1.08 1.84 2.83 1.31 3.52 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23A11.49 11.49 0 0 1 12 6.8c1.02 0 2.05.14 3.01.4 2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.83.58A12 12 0 0 0 12 .5Z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/sousadeiverson" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.43v6.31ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.56 20.45h3.56V9H3.56v11.45Z"/></svg>
+                    </a>
+                    <a href="https://instagram.com/deiversonnsousa" target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm5.25-3.75a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z"/></svg>
+                    </a>
+                    <a href="mailto:deiverson.silva2000@gmail.com" aria-label="E-mail" title="E-mail">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.25 6.8 5.51 6.8-5.51H5.2Zm13.55 2.01-6.52 5.28a1 1 0 0 1-1.26 0L5.25 8.51v8.74c0 .41.34.75.75.75h12c.41 0 .75-.34.75-.75V8.51Z"/></svg>
+                    </a>
+                    <a href="https://wa.me/5562992665329" target="_blank" rel="noreferrer" aria-label="WhatsApp" title="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.17 6.1 2.17 11.33c0 1.85.5 3.67 1.46 5.25L2 22l5.6-1.49a9.3 9.3 0 0 0 4.44 1.14h.01c5.46 0 9.88-4.1 9.88-9.33S17.5 2 12.04 2Zm0 16.89c-1.35 0-2.67-.36-3.82-.98l-.27-.16-3.32.88 1-3.23-.18-.33A7.46 7.46 0 0 1 4.73 11.3c0-4.13 3.38-7.49 7.31-7.49s7.31 3.36 7.31 7.49-3.38 7.49-7.31 7.49Zm4.1-5.61c-.22-.11-1.3-.64-1.5-.71-.2-.07-.34-.11-.49.11-.15.22-.58.71-.71.85-.13.15-.26.17-.48.06-.22-.11-.9-.33-1.71-1.05-.63-.56-1.05-1.26-1.17-1.47-.12-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.49-1.18-.67-1.62-.18-.43-.36-.37-.49-.38h-.42c-.14 0-.37.05-.56.28-.19.22-.72.71-.72 1.73s.74 2 .84 2.13c.1.15 1.45 2.2 3.52 3.08.49.21.87.34 1.17.44.5.16.95.14 1.31.08.4-.06 1.3-.53 1.49-1.05.19-.52.19-.96.13-1.05-.06-.09-.2-.15-.42-.26Z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <div class="panel-card">
+                    <p class="label">Status</p>
+                    <h3>Fullstack Developer</h3>
+                    <ul>
+                        <li>Frontend & Backend</li>
+                        <li>JavaScript / Node.js</li>
+                        <li>APIs & Banco de Dados</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">Sobre</p>
+                <h2>Transformando ideias em experiências digitais.</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Sou um desenvolvedor fullstack apaixonado por transformar ideias em soluções digitais
+                        completas, escaláveis e com boa experiência de uso. Trabalho tanto no frontend quanto no
+                        backend, entregando aplicações com qualidade, organização e foco em resultado.
+                    </p>
+                    <p>
+                        Acredito que um bom projeto vai além do código: ele precisa resolver problemas de forma
+                        eficiente, pensar na experiência do usuário e garantir uma base sólida para crescimento.
+                    </p>
+                </div>
+
+                <div class="about-box">
+                    <h3>Objetivo</h3>
+                    <p>Construir aplicações web completas, modernas e eficientes para pessoas, marcas e negócios.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">Projetos</p>
+                <h2>Alguns trabalhos que destaquei.</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-badge">Web</div>
+                    <h3>Portfolio Matrix</h3>
+                    <p>Landing page com visual cyberpunk, fundo animado e identidade digital futurista.</p>
+                    <a href="#">Ver projeto</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-badge">Web App</div>
+                    <h3>Arena Brasil</h3>
+                    <p>Plataforma para organizar campeonatos de futebol amador, equipes, partidas, resultados e classificação.</p>
+                    <a href="https://deiversonsousa.github.io/arena-manager/" target="_blank" rel="noreferrer">Ver projeto</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-badge">Web App</div>
+                    <h3>Clipmaker</h3>
+                    <p>Aplicação web para upload e criação de clipes com uma interface prática e visual.</p>
+                    <a href="https://deiversonsousa.github.io/nlw-operator/" target="_blank" rel="noreferrer">Ver projeto</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">Skills</p>
+                <h2>Ferramentas e tecnologias que uso.</h2>
+            </div>
+
+            <div class="skills-grid">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>React</span>
+                <span>APIs REST</span>
+                <span>SQL</span>
+                <span>Git</span>
+                <span>UI/UX</span>
+                <span>Responsive Design</span>
+            </div>
+        </section>
+
+        <section id="contato" class="section contact container">
+            <div class="section-heading">
+                <p class="eyebrow">Contato</p>
+                <h2>Vamos construir algo incrível juntos.</h2>
+            </div>
+
+            <div class="contact-box">
+                <p>Se você busca uma interface moderna, funcional e memorável, podemos conversar.</p>
+
+                <div class="contact-actions">
+                    <a href="https://wa.me/5562992665329" target="_blank" rel="noreferrer" class="contact-item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.17 6.1 2.17 11.33c0 1.85.5 3.67 1.46 5.25L2 22l5.6-1.49a9.3 9.3 0 0 0 4.44 1.14h.01c5.46 0 9.88-4.1 9.88-9.33S17.5 2 12.04 2Zm0 16.89c-1.35 0-2.67-.36-3.82-.98l-.27-.16-3.32.88 1-3.23-.18-.33A7.46 7.46 0 0 1 4.73 11.3c0-4.13 3.38-7.49 7.31-7.49s7.31 3.36 7.31 7.49-3.38 7.49-7.31 7.49Zm4.1-5.61c-.22-.11-1.3-.64-1.5-.71-.2-.07-.34-.11-.49.11-.15.22-.58.71-.71.85-.13.15-.26.17-.48.06-.22-.11-.9-.33-1.71-1.05-.63-.56-1.05-1.26-1.17-1.47-.12-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.49-1.18-.67-1.62-.18-.43-.36-.37-.49-.38h-.42c-.14 0-.37.05-.56.28-.19.22-.72.71-.72 1.73s.74 2 .84 2.13c.1.15 1.45 2.2 3.52 3.08.49.21.87.34 1.17.44.5.16.95.14 1.31.08.4-.06 1.3-.53 1.49-1.05.19-.52.19-.96.13-1.05-.06-.09-.2-.15-.42-.26Z"/></svg>
+                        <span>+55 (62) 99266-5329</span>
+                    </a>
+
+                    <a href="mailto:deiverson.silva2000@gmail.com" class="contact-item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.25 6.8 5.51 6.8-5.51H5.2Zm13.55 2.01-6.52 5.28a1 1 0 0 1-1.26 0L5.25 8.51v8.74c0 .41.34.75.75.75h12c.41 0 .75-.34.75-.75V8.51Z"/></svg>
+                        <span>deiverson.silva2000@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
